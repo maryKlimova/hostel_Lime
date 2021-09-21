@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100;200&display=swap');
+@import 'var.scss';
+@import 'util.scss';
+@import 'typo.scss';
+
+
+* body {
+  font-family: $family;
+  -webkit-font-smoothing: antialiased;
+  font-size: $unit*2;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.wrap  *{
+  box-sizing: border-box;
+}
+.wrap h2{
+  font-family: $family_2;
+}
+
+.section--title {
+  font-size: 41px;
+  color: $dark-grey;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.section--text {
+  font-size: 15px;
+  color: $light-gray;
+  font-style: normal;
+}

@@ -1,0 +1,50 @@
+@import "../../style/var.scss";
+
+
+.home_rooms_background {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background: center/cover no-repeat url("../../assets/about_1.jpg");
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+
+.home_rooms {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  padding: 50px 0;
+
+}
+.home_rooms--text {
+  width: 65%;
+}
+.home_rooms_wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

@@ -1,0 +1,93 @@
+@import 'var.scss';
+
+img{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.c{
+	box-sizing: border-box;
+	min-width: $unit*35;
+	max-width: $unit*146;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 $unit*2;
+}
+.container{
+	@extend .c;
+	overflow: hidden;
+}
+.container--grid{
+	@extend .c;
+	max-width: 100%;
+	display: flex;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	flex-direction: row;
+	
+}
+
+.parallax_container {
+	height: 100vh;
+	overflow: hidden;
+	overflow-y: auto;
+	perspective: 3px;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align:right;
+}
+.section_base{
+	overflow: hidden;
+	margin: $unit*4 auto;
+	padding: $unit*4 0;
+}
+
+.arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	position: absolute;
+}
+
+
+.arrow--right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.arrow--left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
+
+.arrow--up {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+}
+
+.arrow--down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+	.row{
+		margin-left: 0;
+	}
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

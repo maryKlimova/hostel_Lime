@@ -1,0 +1,87 @@
+@import '../../style/var.scss';
+
+.header {
+    width: 100%;
+    height: $headerHeight;
+    background: #FFF;
+    .container, .row, .width25, .width50{
+        height: 100%;
+        line-height: $headerHeight - $unit;
+    }
+    border-bottom: 1px solid $shadow;
+    box-shadow: $box-shadow;
+    position: sticky;
+    top:0;
+    z-index: 9999;
+}
+.header_container_main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_container{
+    display: flex;
+}
+
+.header__name{
+    display: block;
+    height: $headerHeight;
+    line-height: $headerHeight;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+
+}
+
+.header_logo {
+    height: 100%;
+    width: 100px;
+    background: $lime;
+    text-align: center;
+    font-size: 21px;
+    color: #fff;
+    display: block;
+}
+.header_contact{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+
+    & .header_contact_info {
+        color: $dark-green;
+        font-size: 14px;
+        padding-left: 22px;
+        position: relative;
+        margin: 0;
+
+
+        & span {
+            color: $lime;
+        }
+
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 17px;
+            height: 17px;
+            display: block;
+            background: url("../../assets/custom-icons/phone.png")no-repeat center;
+            background-size: 100%;
+        }
+
+    }
+
+}
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (max-width: $smallScreen){
+
+    .header_contact {
+        display: none;
+    }
+}

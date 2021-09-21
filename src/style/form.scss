@@ -1,0 +1,153 @@
+@import 'var.scss';
+@import '../components/btn/style.scss';
+$gray: #CCC;
+.fuck-you-web-kit{
+    -webkit-appearance: none;
+}
+
+.base-input{
+    @extend .fuck-you-web-kit;
+    width: 100%;
+    font-family: $family;
+    display: block;
+    box-sizing: border-box;
+    height: $unit*5;
+    padding: $unit/2 $unit;
+    border: 1px solid $gray;
+    font-size: $unit*2+2;
+    color:#000;
+    &::placeholder{
+        color: $gray;
+    }
+}
+.inputgroup{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: $unit*2;
+
+    label{
+        display: block;
+        margin-bottom: $unit/2;
+        font-weight: bold;
+    }
+    input[type='text'], input[type='email'], input[type='tel']{
+        @extend .base-input;
+    }
+    textarea{
+        @extend .base-input;
+        height: auto;
+        padding: $unit;
+        min-height:  $unit*8;
+    }
+    input, textarea{
+        transition: $transition;
+        &:focus{
+            padding-left: $unit*2;
+            padding-right: $unit*2;
+            border-radius: $radius;
+            transition: $transition;
+            outline: 0;
+            border: 0;
+            box-shadow: 0 2px 8px $shadow;
+        }
+    }  
+}
+
+.form__result.form-success, input.input-success{
+    border-color: green !important;
+    color: green !important;
+}
+
+.form__result.form-error, input.input-error{
+    border-color: #ED2E22 !important;
+    color: #ED2E22 !important;
+    
+}
+.form-error{
+    font-size: 14px;
+    color: red;
+}
+input.input-disbled{
+    background: $gray !important;
+    border: $gray !important;
+    color: #666 !important;
+    cursor: default;
+    &:hover{
+        transform: none;
+    }
+}
+input[type="submit"]{
+    @extend .bb;
+}
+.submit_group{
+    display: flex;
+    margin-top: $unit;
+    .button_wrap{
+        width: 25%;
+        box-sizing: border-box;
+    }
+    .text_wrap{
+        width: 75%;
+        box-sizing: border-box;
+        padding-left: $unit*2;
+        font-size: $unit*2-2;
+        line-height: $unit*2+2;
+        color: $gray;
+
+    }
+}
+.form__result{
+    box-sizing: border-box;
+    padding: $unit $unit 0 $unit;
+    text-align: center;
+    margin-top: $unit;
+    display: block;
+    color: green
+}
+.tp_text{
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    color: $gray;
+}
+form{
+    .row{
+        margin-left: -$unit*3;
+    }
+}
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+    .submit_group{
+        flex-direction: column;
+        .button_wrap{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+        }
+        .text_wrap{
+            width: 100%;
+            padding-left: 0;
+            margin-top: $unit;
+        }
+    }
+    form{
+        .row{
+            margin-left: 0;
+            .width30, .width70{
+                width: 100%;
+                padding: 0;
+                text-align: center;
+            }
+            .width70{
+                margin-top: $unit;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+    
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+   
+}

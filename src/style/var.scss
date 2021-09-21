@@ -1,0 +1,34 @@
+$accent: #4dd0e1;
+$light: #f3f3f3;
+$lime: #8DAB3A;
+$green_blue:#8DAB3A;
+$grey:#8DAB3A;
+$grey-green:#B7C180;
+//$dark-green:#043022;
+$dark-green:#333333;
+$dark-grey:#333333;
+$light-gray:#666666;
+
+$unit: 8px;
+
+$shadow: rgba(0,0,0,0.2);
+$box-shadow:  0 1px 5px -2px rgba(42,42,42,.4);
+
+$phone: $unit * 30; //240
+$tablet: $unit * 96; // 768
+$smallScreen: $unit * 128; // 1024
+$mediumScreen: $unit * 172; // 1374
+$largeScreen: $unit * 240; // 1920
+
+$container: $unit * 160; // 1280
+$headerHeight: $unit * 10; // 80
+
+$transition: .2s;
+$radius: $unit/2;
+
+//$family: 'Arial', 'Helvetica Neue', sans-serif;
+//$family: "Segoe UI", "Helvetica", sans-serif;
+$family: "Poppins";
+$family_2: "Playfair Display";
+
+

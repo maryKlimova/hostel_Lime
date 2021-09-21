@@ -1,0 +1,23 @@
+@import "../../style/var.scss";
+
+.hero {
+  height: 80vh;
+  background: url('/src/assets/hero.jpg') no-repeat bottom center/cover;
+  position: relative;
+}
+.hero__container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

@@ -1,0 +1,33 @@
+@import "../../style/var.scss";
+
+.nav__menu {
+  display: flex;
+  width: auto;
+}
+
+.nav__item {
+  font-size: 21px;
+  color: $dark-green;
+  transition: 0.25s;
+  padding-left: 30px;
+  //padding: 14px 20px 10px;
+  cursor: default;
+  text-decoration: none;
+  &:hover {
+    color: $lime;
+  }
+}
+
+.nav__item.active{
+  color: $lime;
+}
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

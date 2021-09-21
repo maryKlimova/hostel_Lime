@@ -1,0 +1,46 @@
+{
+  "name": "starter_preact",
+  "version": "1.0.0",
+  "description": "Preact boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html -p 8080 --no-cache --open",
+    "build": "parcel build index.html --out-dir build --no-source-maps"
+  },
+  "author": "minaevdesign@gmail.com",
+  "license": "ISC",
+  "sw-precache": {
+    "maximumFileSizeToCacheInBytes": 10485760
+  },
+  "cache": {
+    "disablePlugin": true,
+    "inDev": false,
+    "strategy": "default",
+    "clearDist": true
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/runtime": "^7.8.3",
+    "babel-plugin-object-values-to-object-keys": "^1.0.2",
+    "babel-plugin-transform-es2017-object-entries": "0.0.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-sw-cache": "^0.3.1",
+    "preact": "^10.5.9",
+    "preact-router": "^3.2.1",
+    "sass": "^1.32.4"
+  },
+  "dependencies": {
+    "browserslist": "^4.16.1",
+    "caniuse-lite": "^1.0.30001174",
+    "react-date-picker": "^8.0.6",
+    "react-datepicker": "^3.4.1"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom": "preact/compat"
+  }
+}

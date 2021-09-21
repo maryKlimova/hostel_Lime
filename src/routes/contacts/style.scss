@@ -1,0 +1,15 @@
+@import "../../style/var.scss";
+
+.contacts_head_img {
+  background: center/cover no-repeat url("../../assets/1.jpg");
+}
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

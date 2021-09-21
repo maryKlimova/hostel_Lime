@@ -1,0 +1,11 @@
+{ "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    [ "@babel/plugin-transform-react-jsx", { "pragma":"h" } ],
+    "@babel/plugin-transform-runtime",
+    "babel-plugin-object-values-to-object-keys",
+    "transform-es2017-object-entries"
+
+  ]
+}

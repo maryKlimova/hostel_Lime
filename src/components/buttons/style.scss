@@ -1,0 +1,37 @@
+@import "../../style/var.scss";
+
+.btn{
+	display: inline-block;
+	box-sizing: border-box;
+	height: $unit*5;
+	width: auto;
+	text-align: center;
+	background: $accent;
+	border: none;
+	cursor: pointer;
+	border-radius: $radius;
+	color: #FFF;
+	font-size: $unit*2 + 4;
+	text-decoration: none;
+	line-height: $unit*3-2;
+	padding: $unit $unit*2;
+	transition: $transition;
+	-webkit-appearance: none;
+	text-transform: uppercase;
+	&:hover{
+		background: $accent;
+		transition: $transition;
+		transform: translateY(1px);
+	}
+
+}
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

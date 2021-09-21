@@ -1,0 +1,60 @@
+@import "../../style/var.scss";
+
+.booking_panel_container {
+  //height: 80vh;
+  width: 55%;
+  position: relative;
+  box-shadow: 0px 2px 30px 2px rgba(42, 42, 42, 0.2);
+  padding-left: 30px;
+  top: -40px;
+  z-index: 99;
+  background: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar_input {
+  color: $dark-green;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  cursor: default;
+}
+
+.booking_panel_date p{
+  font-size: 12px;
+  color: $green_blue;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin: 0;
+}
+.calendar_submit{
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  background: $lime;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: default;
+  transition: 0.25s;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $dark-green;
+
+  }
+}
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+  .booking_panel_container {
+    //width: 95%;
+  }
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

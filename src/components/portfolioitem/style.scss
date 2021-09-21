@@ -1,0 +1,60 @@
+@import "../../style/var.scss";
+
+.portfolio__item {
+  width: 16.6666%;
+  box-sizing: border-box;
+  margin-bottom: $unit*4;
+  padding: $unit*4;
+  text-align: center;
+  position: relative;
+  transition: ease-in-out $transition;
+
+}
+
+.potrfolio__item__link{
+  text-decoration: none;
+  color: #000;
+}
+
+.potrfolio__item__title{
+  display: inline-block;
+  margin-top: $unit;
+}
+
+.potrfolio__item__prev{
+  transition: ease-in-out $transition;
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+
+@media only screen and (max-width: 1440px){
+  .portfolio__item {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1280px){
+  .portfolio__item {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .portfolio__item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .portfolio__item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 520px){
+  .portfolio__item {
+    width: 100%;
+  }
+}

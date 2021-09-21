@@ -1,0 +1,99 @@
+@import "../../style/var.scss";
+
+.home_about {
+  display: block;
+  width: 100%;
+  position: relative;
+  //padding: 50px 0;
+}
+
+.home_about_text{
+  width: 50%;
+  position: absolute;
+  z-index: 10;
+  top: 10%;
+  left:0;
+}
+
+.home_about_text--title {
+  font-size: 41px;
+  color: $dark-green;
+  font-weight: bold;
+  line-height: normal;
+}
+
+//.home_about_text--desc{
+//  font-size: 15px;
+//  color: $light-gray;
+//  font-style: normal;
+//}
+
+.home_about_text--btn {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $lime;
+  font-weight: 500;
+  left: 58%;
+  font-size: 15px;
+  cursor: default;
+  transition: 0.25s;
+  padding-right: 35px;
+
+  &:hover {
+    color: $dark-green;
+  }
+
+  &:checked {
+    color: $lime;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: $lime;
+    position: absolute;
+    top: 50%;
+    right: -60px;
+  }
+}
+
+.home_about-photo{
+  padding: 50px 0;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 40%;
+  z-index: 1;
+}
+
+.about_photo_border {
+  width: 48%;
+  overflow: hidden;
+  max-height: 450px;
+}
+
+.image_about {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  transition: 0.25s;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}

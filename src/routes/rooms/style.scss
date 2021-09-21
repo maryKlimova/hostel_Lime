@@ -1,0 +1,21 @@
+@import "../../style/var.scss";
+.rooms_head_slide {
+  background: center/cover  url("../../assets/3.jpg")no-repeat ;
+}
+
+.rooms_wrapper{
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: $phone) and (max-width: $tablet){
+
+}
+@media only screen and (min-width: $tablet) and (max-width: $smallScreen){
+
+}
+@media only screen and (min-width: $smallScreen) and (max-width: $mediumScreen){
+
+}
